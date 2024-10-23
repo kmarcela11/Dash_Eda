@@ -10,6 +10,7 @@ import dash_bootstrap_components as dbc
 # Estilo de Dash con Bootstrap
 app = dash.Dash(external_stylesheets=[dbc.themes.ZEPHYR], suppress_callback_exceptions=True)
 
+server = app.server
 # Datos a usar
 file_path = r'C:\Users\kamac\OneDrive\Desktop\MachineLearningUN\eda.xlsx'
 df = pd.read_excel(file_path)
