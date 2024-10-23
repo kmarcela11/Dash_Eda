@@ -9,8 +9,8 @@ import dash_bootstrap_components as dbc
 
 # Estilo de Dash con Bootstrap
 app = dash.Dash(external_stylesheets=[dbc.themes.ZEPHYR], suppress_callback_exceptions=True)
-
 server = app.server
+
 # Datos a usar
 file_path = r'eda.xlsx'
 df = pd.read_excel(file_path)
@@ -761,4 +761,4 @@ def display_page(pathname):
 
 # Ejecución de la aplicación
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server()
