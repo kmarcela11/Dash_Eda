@@ -12,7 +12,7 @@ app = dash.Dash(external_stylesheets=[dbc.themes.ZEPHYR], suppress_callback_exce
 
 server = app.server
 # Datos a usar
-file_path = r'C:\Users\kamac\OneDrive\Desktop\MachineLearningUN\eda.xlsx'
+file_path = r'eda.xlsx'
 df = pd.read_excel(file_path)
 df.rename(columns={'SoftwareVersion': 'Fecha'}, inplace=True)
 
