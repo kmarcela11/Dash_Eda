@@ -19,7 +19,6 @@ df.rename(columns={'SoftwareVersion': 'Fecha'}, inplace=True)
 # Asegurarte de que la columna 'Fecha' está en formato datetime
 df['Fecha'] = pd.to_datetime(df['Fecha'], errors='coerce')  # Convierte a datetime, ignorando errores
 df['Mes'] = df['Fecha'].dt.month  # Extraer el mes de la columna 'Fecha'
-print(df.columns)
 
 # Definir las variables de interés
 variables = ['WindSpeed80_2', 'Presion', 'temperatura 100m', 'Humedad']
