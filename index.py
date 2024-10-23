@@ -760,5 +760,6 @@ def display_page(pathname):
         return 'Página no encontrada'
 
 # Ejecución de la aplicación
-if __name__ == '__main__':
-    app.run_server()
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
